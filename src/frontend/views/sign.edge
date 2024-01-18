@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+    integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  </script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+  <link rel="stylesheet" href="/styles/sign.css" />
+  <title>Flash Foood</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="box">
+      <div class="inner-box">
+        <div class="forms-wrap">
+          <form autocomplete="off" method="post" action="/api/auth/signin" class="sign-in-form">
+            <div class="logo">
+              <img src="/img/logo.png" alt="easyclass" />
+              <h4>Flash Food ⚡</h4>
+            </div>
+
+            <div class="heading">
+              <h2>Que Bom Ver Você de Novo</h2>
+              <h6>Não é cadastrado ?</h6>
+              <a href="#" class="toggle">Cadastre-se</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="email" name="email" minlength="4" class="input-field" autocomplete="off" required />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" name="password" minlength="4" class="input-field" autocomplete="off" required />
+                <label>Senha</label>
+              </div>
+
+              <input type="submit" value="Entrar" class="sign-btn" />
+
+              <p class="text">
+                Esqueçeu sua senha ?
+                <a href="#">Clique Aqui</a>
+              </p>
+            </div>
+          </form>
+
+          <form method="POST" action="/api/auth/signup" autocomplete="off" class="sign-up-form">
+            <div class="logo">
+              <img src="/img/logo.png" alt="easyclass" />
+              <h4>Flash Food ⚡ </h4>
+            </div>
+
+            <div class="heading">
+              <h2 id="login">Seja Bem Vindo</h2>
+              <h6>Já tem uma conta ?</h6>
+              <a href="#" class="toggle">Entrar</a>
+            </div>
+
+            <div class="actual-form">
+              <div class="input-wrap">
+                <input type="text" name="name" id="name" minlength="4" class="input-field" autocomplete="off"
+                  required />
+                <label>Nome</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="email" name="email" id="email" class="input-field" autocomplete="off" required />
+                <label>Email</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="text" name="phone" id="phone" class="input-field" autocomplete="off" required />
+                <label>Telefone</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="text" name="cpf" id="CPF" class="input-field" autocomplete="off" required />
+                <label>CPF</label>
+              </div>
+
+              <div class="input-wrap">
+                <input type="password" name="password" id="password" class="input-field" autocomplete="off" required />
+                <label>Senha</label>
+              </div>
+
+              <input type="submit" value="Cadastrar" class="sign-btn" />
+            </div>
+          </form>
+        </div>
+
+        <div class="carousel">
+          <div class="images-wrapper">
+            <img src="/img/flash.svg" class="image img-1 show" alt="" />
+            <img src="/img/chef.svg" class="image img-2" alt="" />
+            <img src="/img/rest.svg" class="image img-3" alt="" />
+          </div>
+
+          <div class="text-slider">
+            <div class="text-wrap">
+              <div class="text-group">
+                <h2>O delivery mais rápido do mundo</h2>
+                <h2>Na palma da sua mão</h2>
+                <h2>No conforto da sua casa</h2>
+              </div>
+            </div>
+
+            <div class="bullets">
+              <span class="active" data-value="1"></span>
+              <span data-value="2"></span>
+              <span data-value="3"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/js/sign.js"></script>  
+</body>
+
+</html>
